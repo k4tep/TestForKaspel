@@ -1,5 +1,6 @@
 {
   "name": "kaspel",
+  "homepage": "https://k4tep.github.io/TestForKaspel/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+"deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@ant-design/icons": "^5.6.1",
