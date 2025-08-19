@@ -101,7 +101,7 @@ export function App() {
                 open={toggleModal}
                 onOk={() => {
                     if (!validate()) return;
-                    newData.value === 0 ? addRow() : editRow();
+                    data.find((e) => e.id === newData.id) ? editRow() : addRow();
 
                     setNewData({
                         id: data.length + 1,
